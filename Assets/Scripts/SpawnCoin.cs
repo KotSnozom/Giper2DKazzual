@@ -16,7 +16,7 @@ public class SpawnCoin : MonoBehaviour
     [SerializeField] private GameObject coins;
     [SerializeField] private float timeToSpawn,MinX,MaxX;
     public List<DefCoins> defCoins = new List<DefCoins>();
-    [Header("Скрипты")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
     [SerializeField] private PlayerMove Pmove;
 
     private void Awake()
@@ -34,21 +34,15 @@ public class SpawnCoin : MonoBehaviour
                 {
                     Transform newCoin = Instantiate(coins, coin.spawnPoint.position, Quaternion.identity).GetComponent<Transform>();
                     newCoin.parent = coin.spawnPoint;
-                    Debug.Log("спавн");
                     coin.isFree = false;
                     newPosPoint(coin);
                 }
             }
         }
-
     }
     private void newPosPoint(DefCoins pos)
     {
         float randX = Random.Range(MinX, MaxX);
         pos.spawnPoint.position = new Vector2(randX, pos.spawnPoint.position.y);
-    }
-    public void FreePos() 
-    { 
-
     }
 }

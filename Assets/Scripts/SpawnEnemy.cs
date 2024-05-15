@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
@@ -11,7 +10,6 @@ public class SpawnEnemy : MonoBehaviour
 
     public void GenerateSpawnEnemy()
     {
-        Debug.Log("спавн противников");
         StartCoroutine(SpawnsEnemy());
         IEnumerator SpawnsEnemy()
         {

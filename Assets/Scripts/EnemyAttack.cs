@@ -12,14 +12,13 @@ public class EnemyAttack : MonoBehaviour
     }
     private void LoadScene()
     {
-        Debug.Log("рестарт");
         StartCoroutine(SceneLoading());
 
         IEnumerator SceneLoading()
         {
             ControllerGame.isPause = true;
             Time.timeScale = 0;
-            AsyncOperation async = SceneManager.LoadSceneAsync(nameScene);
+            SceneManager.LoadSceneAsync(nameScene);
             yield return new WaitForSeconds(1);
         }
     }

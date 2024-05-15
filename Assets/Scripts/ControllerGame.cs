@@ -11,7 +11,6 @@ public class ControllerGame : MonoBehaviour
     private void Start()
     {
         OnStart += spawnEnemy.GenerateSpawnEnemy;
-        Debug.Log(isPause);
     }
 
     public void GameMode()
