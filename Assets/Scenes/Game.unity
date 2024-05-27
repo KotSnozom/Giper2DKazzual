@@ -656,8 +656,10 @@ MonoBehaviour:
   posEnemySpawn:
   - {fileID: 77681322}
   - {fileID: 288876286}
-  MinTime: 1
+  MinTime: 0.5
   MaxTime: 2
+  _countEnemy: 0
+  _maxEnemyCount: 5
 --- !u!114 &594357942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1874,8 +1876,8 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1932778800}
   - {fileID: 620299175}
-  - {fileID: 594357937}
   - {fileID: 720361331}
+  - {fileID: 594357937}
   - {fileID: 366284712}
   - {fileID: 718659688}
   - {fileID: 413366576}
